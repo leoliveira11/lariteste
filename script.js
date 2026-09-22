@@ -1,13 +1,7 @@
 const cartaFechada = document.getElementById("cartaFechada");
 const cartaAberta = document.getElementById("cartaAberta");
-
 const abrirCarta = document.getElementById("abrirCarta");
 const fecharCarta = document.getElementById("fecharCarta");
-
-
-// =========================
-// ABRIR CARTA
-// =========================
 
 abrirCarta.addEventListener("click", () => {
 
@@ -24,7 +18,6 @@ abrirCarta.addEventListener("click", () => {
 
         cartaAberta.style.display = "block";
 
-        // Pequeno atraso para permitir a animação
         setTimeout(() => {
             cartaAberta.style.opacity = "1";
             cartaAberta.style.transform = "translateY(0)";
@@ -32,11 +25,6 @@ abrirCarta.addEventListener("click", () => {
 
     }, 500);
 });
-
-
-// =========================
-// FECHAR CARTA
-// =========================
 
 fecharCarta.addEventListener("click", () => {
 
@@ -53,7 +41,6 @@ fecharCarta.addEventListener("click", () => {
 
         cartaFechada.style.display = "flex";
 
-        // Pequeno atraso para permitir a animação
         setTimeout(() => {
             cartaFechada.style.opacity = "1";
             cartaFechada.style.transform = "translateY(0)";
